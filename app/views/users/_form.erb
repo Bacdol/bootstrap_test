@@ -1,0 +1,37 @@
+<%= form_tag({ :controller => "users/create" }, :id => "sub-form-step1", :class => "sign-up form-horizontal") do %>
+
+  <%= render "shared/error_messages", :target => @user %>
+
+  <%= content_tag :div, :class => "control-group" do %>
+    <label class="control-label" for="username">Username</label>
+    <%= content_tag :div, :class => "controls" do %>
+      <%= text_field_tag :username, "", :class => "span2", :placeholder => "Username" %>
+    <% end %>
+  <% end %>
+  <%= content_tag :div, :class => "control-group" do %>
+    <label class="control-label" for="password">Password</label>
+    <%= content_tag :div, :class => "controls" do %>
+      <%= password_field_tag :password, "", :class => "span2", :placeholder => "Password" %>
+    <% end %>
+  <% end %>
+  <%= content_tag :div, :class => "control-group" do %>
+    <label class="control-label" for="password_confirmation">Password</label>
+    <%= content_tag :div, :class => "controls" do %>
+      <%= password_field_tag :password_confirmation, "", :class => "span2", :placeholder => "Password" %>
+    <% end %>
+  <% end %>
+  <%= content_tag :div, :class => "control-group" do %>
+    <label class="control-label" for="email">Email</label>
+    <%= content_tag :div, :class => "controls" do %>
+      <%= content_tag :div, :class => "input-prepend" do %>
+      <span class="add-on">@</span>
+      <%= text_field_tag :email, "", :class => "span2", :placeholder => "Email" %>
+    <% end %>
+    <% end %>
+  <% end %>
+  <%= content_tag :div, :class => "control-group" do %>
+    <%= content_tag :div, :class => "controls" do %>
+      <%= submit_tag "Sign up", :class => "btn btn-large btn-success" %>
+    <% end %>
+  <% end %>
+<% end %>

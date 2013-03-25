@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BootstrapTest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= stylesheet_link_tag    "bootstrap.min", :media => "screen" %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "bootstrap.min" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <%= yield %>
+    <script>
+	  !function ($) {
+	    $(function(){
+	      // carousel demo
+	      $('#myCarousel').carousel()
+	    })
+	  }(window.jQuery)
+	</script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<%= form_tag({ :controller => "user_sessions" }, :class => "sign-in form-inline") do %>
+  <%= content_tag :div, :class => "control-group" do %>
+    <%= content_tag :div, :class => "input-prepend" do %>
+      <span class="add-on">@</span>
+      <%= text_field_tag :email, "", :class => "span2", :placeholder => "Email" %>
+    <% end %>
+    <%= password_field_tag :password, "", :class => "span2", :placeholder => "Password" %>
+    <%= submit_tag "Sign in", :class => "btn btn-info" %>
+  <% end %>
+  <%= content_tag :div, :class => "control-group" do %>
+    <label class="checkbox">
+      <%= check_box_tag :remember_me, "1", true %>
+      <label for="remember_me">Remember me</label>
+    </label>
+    <label class="forgotten-password">
+      <a>Forgotten password</a>
+    </label>
+  <% end %>
+<% end %>

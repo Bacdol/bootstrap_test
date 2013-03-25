@@ -1,0 +1,136 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+body {
+	height: 100%;
+	width: 100%;
+	background-color: #eee !important;
+}
+
+.logout-header {
+	
+	color: #fff;
+}
+
+.logout-header .sign-in{
+	background-color: #333;
+	padding: 3%;
+	margin-left: 2%;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	float: left;
+}
+
+.logout-header .sign-up{
+	background-color: #333;
+	padding: 3%;
+	margin-right: 2%;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	float: right;
+}
+
+.logout-header .clear{
+	clear: both;
+}
+
+.sign-in .forgotten-password a{
+	color: #fff;
+}
+
+.divider {
+	margin: 0 10% 0 10%;
+	border: 0;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #ffffff;
+}
+
+.logout-footer {
+	margin: 0 10% 0 10%;
+	color: #333;
+}
+
+.logout-footer ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	font-style: italic;
+}
+
+.logout-footer ul li {
+	display: inline;
+	color: #333;
+}
+
+.logout-footer ul li a{
+	color: #333;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+      width: 80%;
+      margin-right: 20%;
+      margin-left: 20%;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: relative;
+      float: left;
+      min-width: 500px;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      position: relative !important;
+      float: left;
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+      border-radius: 30px;
+	  -webkit-border-radius: 30px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }

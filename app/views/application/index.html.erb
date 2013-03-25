@@ -1,0 +1,60 @@
+<%= content_tag :div, :class => "home-page" do %>
+	<%= content_tag :div, :class => "logout-header" do %>
+		<%= render :partial => "user_sessions/sign_in" %>
+		<%= render :partial => "users/form" %>
+		<%= content_tag :div, :class => "clear" do %><% end %>
+	<% end %>
+
+	<hr class="divider">
+
+	<div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+            </div>
+            <%= image_tag "browser-icon-chrome.png" %>
+          </div>
+          
+        </div>
+        <div class="item">
+          <div class="container">
+          	<%= image_tag "browser-icon-firefox.png" %>
+            <div class="carousel-caption">
+              <h1>L'extension Firefox</h1>
+              <p class="lead">Partagez vos impressions à tout moment lors de vos navigations, récupérer l'avis des autres internautes sur les sites que vous êtes en train de visiter.</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Applications Iphone, Android et bientôt W8 !</h1>
+              <p class="lead">Même en voyage, consultez et continuez à intéragir avec le communauté grâce aux applications mobiles.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+            <%= image_tag "apple-android-windows.png" %>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+
+    <hr class="divider">
+
+    <div class="logout-footer">
+    	<ul class="contact-us">
+    		<li class="site-name"><span>©Rate Your World</span></li>
+    		<li class="contact">
+    			<a href="mailto:cyrille.gourdin@ingesup.com">Contact</a>
+			</li>
+		</ul>
+    </div>
+
+
+<% end %>
